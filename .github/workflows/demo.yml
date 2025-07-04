@@ -1,0 +1,13 @@
+name: Demo Custom Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        uses: ./.github/actions/hello
+        with:
+          name: GitHub
